@@ -144,7 +144,7 @@ for (let item of products){
 }
 
 
-console.log(
-    arr.sort((a,b)=> a-b)
-)
+// console.log(
+//     arr.sort((a,b)=> a-b)
+// )
 
