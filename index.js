@@ -119,32 +119,14 @@ let categories = [
   },
 ]
 
-// Создать категориям новый ключ arr
-// В эти ключи запушить продукты относящиеся этой же категории
-// Сортировать ключ arr по алфавиту 
-
-
-// for(let item of products) {
-//   for(let itemTwo of categories) {
-//     if(item.type === itemTwo.type) {
-//       itemTwo.count++
-//       itemTwo.total += item.price
-//     }
-//   } 
-// }
-
-
-
-for (let item of products){
-    for (items of categories) {
-        if(item.type === items.type){
-            products.push(item)
+for (let item of categories ){
+    item.product =[]
+    for (let itemTwo of products) {
+        if(item.type === itemTwo.type){
+            item.products.push(itemTwo.title)
+                item.count ++
+                item.total += itemTwo.price
         }
     }
+    item.produts.sort()
 }
-
-
-// console.log(
-//     arr.sort((a,b)=> a-b)
-// )
-
